@@ -38,6 +38,10 @@ button{
     border: 2px solid brown;
     padding:0.5rem;
 }
+#error-message{
+    color:red;
+    font-weight: bold;
+}
 caption{
     font-weight: bold;
     font-size: 1.1rem;

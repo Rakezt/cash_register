@@ -21,7 +21,9 @@ buttonCheck.addEventListener("click",function validateBillandCashGiven(){
     } else {
         errormessage("Bill amount can't be negative");
     }
-}} )
+} } 
+)
+
 
 function calculateChange(amountToBeReturn){
     for (let i=0;i < listOfNotes.length; i++){
