@@ -11,8 +11,9 @@ body{
    
         
 } */
-.heading{
+.heading a{
     color:brown;
+    text-decoration: none;
 }
 .container {
     display: flex;
