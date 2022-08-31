@@ -8,15 +8,16 @@ var listOfNotes=[2000, 500, 100, 20, 10, 5, 1]
 
 buttonCheck.addEventListener("click",function validateBillandCashGiven(){
     hideMessage();
-    if(isNaN(billAmount.value)){
+    if(isNaN(Number(billAmount.value))){
         errormessage("Input only number please")
-    } else{
-    if (billAmount.value > 0){
-        if(cashGiven.value > billAmount.value){
-            var amountToBeReturn=cashGiven.value-billAmount.value;
+    } else if(Number(billAmount.value)===Number(cashGiven.value)){errormessage("Everything looks fine, we don't have to retrun anything");}
+    else{
+    if (Number(billAmount.value) > 0){
+        if(Number(cashGiven.value) > Number(billAmount.value)){
+            var amountToBeReturn=Number(cashGiven.value)-Number(billAmount.value);
             calculateChange(amountToBeReturn) 
         }else{
-           errormessage("We need coolie, should we register");
+           errormessage("Customer should pay more");
         }
     } else {
         errormessage("Bill amount can't be negative");

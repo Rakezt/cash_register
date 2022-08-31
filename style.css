@@ -38,6 +38,7 @@ button{
     background-color:brown;
     border: 2px solid brown;
     padding:0.5rem;
+    cursor:pointer;
 }
 #error-message{
     color:red;
